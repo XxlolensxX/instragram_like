@@ -13,16 +13,16 @@ import { faEllipsisV, faStroopwafel, faLemon, faUtensils } from '@fortawesome/fr
  
 library.add(faEllipsisV,faStroopwafel, faLemon, faUtensils)
 
-
 const app = document.getElementById('app');
 
+import Header from './app/home/header/components/header.jsx';
 
 import logo from '../images/logo.png'
-render( 
+render( [
     <h1>Nueva Aplicación 
         <span>
             <img src={logo} />
         </span> con React 
-    </h1>,  app)
+</h1>,<Header />],  app)
 
 console.log("Holo Mundo desde la consola");

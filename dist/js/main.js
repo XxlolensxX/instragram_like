@@ -42176,6 +42176,38 @@ module.exports = __webpack_require__.p + "../images/logo.png";
 
 /***/ }),
 
+/***/ "./src/js/app/home/header/components/header.jsx":
+/*!******************************************************!*\
+  !*** ./src/js/app/home/header/components/header.jsx ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Header = function Header(prop) {
+    return _react2.default.createElement(
+        'h2',
+        null,
+        'Header'
+    );
+};
+
+exports.default = Header;
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
@@ -42206,6 +42238,10 @@ var _reactFontawesome = __webpack_require__(/*! @fortawesome/react-fontawesome *
 
 var _freeSolidSvgIcons = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 
+var _header = __webpack_require__(/*! ./app/home/header/components/header.jsx */ "./src/js/app/home/header/components/header.jsx");
+
+var _header2 = _interopRequireDefault(_header);
+
 var _logo = __webpack_require__(/*! ../images/logo.png */ "./src/images/logo.png");
 
 var _logo2 = _interopRequireDefault(_logo);
@@ -42219,7 +42255,7 @@ _fontawesomeSvgCore.library.add(_freeSolidSvgIcons.faEllipsisV, _freeSolidSvgIco
 
 var app = document.getElementById('app');
 
-(0, _reactDom.render)(_react2.default.createElement(
+(0, _reactDom.render)([_react2.default.createElement(
     'h1',
     null,
     'Nueva Aplicaci\xF3n',
@@ -42229,7 +42265,7 @@ var app = document.getElementById('app');
         _react2.default.createElement('img', { src: _logo2.default })
     ),
     ' con React'
-), app);
+), _react2.default.createElement(_header2.default, null)], app);
 
 console.log("Holo Mundo desde la consola");
 
