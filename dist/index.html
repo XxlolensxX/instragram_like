@@ -7,11 +7,32 @@
   <link href="dist/../css/main.css" rel="stylesheet"><link href="js/../css/main.css" rel="stylesheet"></head>
   <body>
 
-  <div id="app"></div>
+    <header class="header">
+       <div class="container header__content">
+         <span class="header__add-user">
+          <svg class="lnr lnr-users"><use xlink:href="#lnr-users"></use></svg>
+         </span>
+         <img src="./images/logo.png" alt="lorem ipsum" class="header__logo">
+         <span class="header__inbox-message">
+          <svg class="lnr lnr-rocket"><use xlink:href="#lnr-rocket"></use></svg>
+         </span>   
+       </div>
+    </header>
 
+    <section class="publication">
+      <div class="container">
+        <div class="publication__header">header publication</div>
+        <div class="publication__image"><img src="./images/example_img.jpg" alt="Photo by Sean Foley on Unsplash"></div>
+        <div class="publication__icons">icons</div>
+      </div>  
+    </section>
+    
  <!-- BrowserSync -->
  <script id="__bs_script__">//<![CDATA[
   document.write("<script async src='http://HOST:9000/browser-sync/browser-sync-client.js?v=2.24.5'><\/script>".replace("HOST", location.hostname));
 //]]></script>
+
+<!--app scripts-->
+<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script></body>
 </html>
