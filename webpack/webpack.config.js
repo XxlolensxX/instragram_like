@@ -23,18 +23,7 @@ module.exports = {
               presets: ['babel-preset-env', 'react']
             }
           }     
-        },
-        // {
-        //   test: /\.css$/,
-        //   use: [ MiniCssExtractTextPlugin.loader, 
-        //     {
-        //     loader: 'css-loader',
-        //     options: {
-        //       sourceMaps: true,
-        //       //url: false
-        //     }
-        //   }]
-        // },       
+        },     
         {
         //test: tipo de archivo
         //use: loader que se usará
@@ -61,47 +50,12 @@ module.exports = {
         use: {
           loader: 'url-loader',
           options: {
-            limit: 1000,
+            limit: 2000,
             fallback: 'file-loader',
             name: '../images/[name].[ext]',
           }
         }
       },
-      // {
-      //   test: /\.(gif|png|jpe?g|svg)$/i,
-      //   use: [
-      //     {
-      //       loader: 'file-loader',
-      //       options: {
-      //         name: '[name].[ext]',
-      //         outputPath: 'images/'
-      //        }
-      //     },
-      //     {
-      //       loader: 'image-webpack-loader',
-      //       options: {
-      //         mozjpeg: {
-      //           progressive: true,
-      //           quality: 65
-      //         },
-      //         optipng: {
-      //           enabled: false,
-      //         },
-      //         pngquant: {
-      //           quality: '65-90',
-      //           speed: 4
-      //         },
-      //           gifsicle: {
-      //           interlaced: false,
-      //         },
-      //         // the webp option will enable WEBP
-      //         webp: {
-      //           quality: 75
-      //         }
-      //       }
-      //     }
-      //   ]
-      // }
     ]
   },
   watch: true,

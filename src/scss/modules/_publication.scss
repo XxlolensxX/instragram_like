@@ -1,0 +1,122 @@
+.publication {
+    width: 100%;
+
+    &__header{
+        padding: 10px 0;
+    }
+
+    &__image-container{
+        width: 320px;
+        height: 182px;
+        overflow: hidden;
+        position: relative;
+
+    }
+    &__image{
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__tagged-user{
+        position: absolute;
+        bottom: 14px;
+        left: 14px;
+        z-index: 2;
+        width: 26px;
+        height: 26px;
+        border-radius: 100px;
+        background-color: rgba(38,38,38,.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .lnr-user{
+            font-size: 10px;
+            color: white;
+        }
+    }
+
+    &__header-user {
+        display: flex;
+        align-items: center;
+
+        &-img{
+            width: 32px;
+            height: 32px;
+            background-color: #D8D8D8;
+            border-radius: 50rem;
+            overflow: hidden;
+            margin-right: 10px;
+
+            img{
+               width: 100%; 
+            }
+        }
+
+        &-name{
+            font-weight: 700;
+        }
+
+        &-menu{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+    }
+
+    &__icons{
+        padding: 14px 0;
+        border-bottom: 1px solid rgba(219,219,219,.5);
+
+        .lnr{
+            font-size: 21px;
+            margin-right: 19px;
+        }
+    }
+
+    &__likes{
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        font-size: 14px;
+
+        .lnr{
+            margin-right: 8px;
+        }
+
+        &-text{
+            margin: 0;
+        }
+    }
+
+    &__comments{
+        padding: 0;
+        
+    }
+
+    &__comment{
+        font-size: 14px;
+        list-style: none;
+        margin-bottom: 8px;
+
+        .comment-name{
+            font-weight: 700;
+        }
+
+        .comment-text{
+            margin:  0;
+        }
+
+        .comment-hashtag{
+            color: #003569
+        }
+
+        &__time-box{
+            color: #999999;
+            font-size: 10px;
+            margin-top: 9px;
+        }
+    }
+}
