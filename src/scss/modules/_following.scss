@@ -1,0 +1,93 @@
+.following {
+
+    &__header{
+        width: 100%;
+    }
+
+    &__ul{
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    &__a{
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+        font-size: 17px;
+        color: #999999;
+        font-weight: 500;
+        border-bottom: 1px solid #888881;
+
+        &:hover{
+            border-bottom: 1px solid black;
+            text-decoration: none;
+            color: black;
+        }
+
+        &:active{
+            border-bottom: 1px solid black;
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    &__item{
+        text-align: center;
+        list-style: none;
+    }
+
+    &__notification-one,
+    &__notification-two,
+    &_notification-thre{
+        border-bottom: 0.5px solid #DBDBDB;
+        padding: 11px 0;
+    }
+
+    &__notification-user {
+        display: flex;
+        align-items: flex-start;
+
+        &-img{
+            width: 34px;
+            height: 34px;
+            background-color: #D8D8D8;
+            border-radius: 50rem;
+            overflow: hidden;
+            margin-right: 10px;
+
+            img{
+               width: 100%; 
+            }
+        }
+    }
+
+    &__notification{
+
+        &__liked {
+
+            &-text{
+                font-size: 14px;
+                line-height: 16px;
+                margin: 0;
+                color: #262626;
+
+                span {
+                    color: #888881;
+                }
+            }
+
+            &-photos {
+                width: 44px;
+                height: 44px;
+                display: flex;
+                margin-top: 5px;
+
+                img{
+                    width: 100%;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}

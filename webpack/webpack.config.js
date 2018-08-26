@@ -66,7 +66,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       //title: 'Basic Landing Page',
       filename: '../index.html',
-      template: './src/index.html',
+      template: './src/html/index.html',
+      minify: false
+    }),
+    new HtmlWebpackPlugin({
+      //title: 'Basic Landing Page',
+      filename: '../follow.html',
+      template: './src/html/follow.html',
       minify: false
     }),
     new BrowserSyncPlugin({
