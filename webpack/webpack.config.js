@@ -75,9 +75,15 @@ module.exports = {
       template: './src/html/follow.html',
       minify: false
     }),
+    new HtmlWebpackPlugin({
+      //title: 'Basic Landing Page',
+      filename: '../you.html',
+      template: './src/html/you.html',
+      minify: false
+    }),
     new BrowserSyncPlugin({
       host: 'localhost',
-      port: 9000,
+      port: 3000,
       server: { baseDir: ['dist'] }
     })
   ]
