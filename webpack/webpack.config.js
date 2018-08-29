@@ -3,7 +3,11 @@ const MiniCssExtractTextPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-module.exports = {
+const htmlDir = path.resolve(__dirname, '../src/html');
+
+module.exports = (env) => {
+  console.log(htmlDir);
+  return {
   mode: 'development',
   devtool: "source-map",
   entry: path.resolve(__dirname, '../src/js/main.js'),
@@ -81,10 +85,17 @@ module.exports = {
       template: './src/html/you.html',
       minify: false
     }),
+    new HtmlWebpackPlugin({
+      //title: 'Basic Landing Page',
+      filename: '../search.html',
+      template: './src/html/search.html',
+      minify: false
+    }),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
       server: { baseDir: ['dist'] }
     })
   ]
+}
 }

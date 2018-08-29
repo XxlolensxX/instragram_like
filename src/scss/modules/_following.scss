@@ -39,7 +39,8 @@
 
     &__notification--one,
     &__notification--two,
-    &__notification--three{
+    &__notification--three,
+    &__notification--four{
         border-bottom: 0.5px solid #DBDBDB;
         padding: 11px 0;
     }
@@ -72,6 +73,7 @@
                 line-height: 16px;
                 margin: 0;
                 color: #262626;
+                padding-right: 10px;
             }
 
             &-photos {
@@ -89,6 +91,16 @@
                     width: 100%;
                     height: inherit;
                 }
+            }
+        }
+
+        &__follow {
+            width: 44px;
+            height: 44px;
+
+            .lnr {
+                color: green;
+                font-size: 35px;
             }
         }
 

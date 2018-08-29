@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Instagram App / You</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link href="dist/../css/main.css" rel="stylesheet"></head>
+  <body>
+
+    <!--start search section-->
+    <header class="search">
+      <div class="search__header container">
+        <div class="search__input">
+            <input class="search__input--text" type="text" placeholder="search">
+        </div>
+        
+        <button class="search__button-cancel">cancel</button>
+      </div>
+    </header>
+
+    <div class="search__menu container">
+      <ul class="search__menu__ul">
+        <li class="search__menu__item">top</li>
+        <li class="search__menu__item">people</li>
+        <li class="search__menu__item">tags</li>
+        <li class="search__menu__item">places</li>  
+      </ul>
+    </div>
+
+    <section class="search__results container">
+      <div class="search__results--people">
+        <div class="search__results--people-user">
+            <img src="./../images/user-avatar.jpg" alt="Photo by Toa Heftiba on Unsplash">
+        </div>
+        <div class="search__results--people-info">
+          <p class="search__results--people-name">anyuta_rai</p>
+          <p class="search__results--people-secondary">9 new post</p>
+        </div>
+      </div>
+
+      <div class="search__results--people">
+          <div class="search__results--people-user">
+              <img src="./../images/user-avatar.jpg" alt="Photo by Toa Heftiba on Unsplash">
+          </div>
+          <div class="search__results--people-info">
+            <p class="search__results--people-name">anyuta_rai</p>
+            <p class="search__results--people-secondary">9 new post</p>
+          </div>
+        </div>
+
+        <div class="search__results--people">
+            <div class="search__results--people-user">
+                <img src="./../images/user-avatar.jpg" alt="Photo by Toa Heftiba on Unsplash">
+            </div>
+            <div class="search__results--people-info">
+              <p class="search__results--people-name">anyuta_rai</p>
+              <p class="search__results--people-secondary">9 new post</p>
+            </div>
+          </div>
+    </section>
+    <!--end search section-->
+
+    <!--start app menu -->
+    <div class="app-menu">
+      <div class="container">
+        <div class="app-menu__icons">
+          <span class="lnr lnr-diamond"></span>
+          <span class="lnr lnr-magnifier"></span>
+          <span class="lnr lnr-camera"></span>
+          <span class="lnr lnr-heart"></span>
+          <span class="lnr lnr-user"></span>
+        </div>
+      </div>
+    </div>
+    <!-- end app menu-->
+    
+ <!-- BrowserSync -->
+ <script id="__bs_script__">//<![CDATA[
+  document.write("<script async src='http://HOST:9000/browser-sync/browser-sync-client.js?v=2.24.5'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+<!--app scripts-->
+</body>
+</html>
