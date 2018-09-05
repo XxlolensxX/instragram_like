@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: 'sf_ui_textlight';
+    src: url('../fonts/sfuitext-light.ttf') format('ttf'),
+        url('../fonts/sfuitext-light-webfont.woff2') format('woff2'),
+        url('../fonts/sfuitext-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_textbold';
+    src: url('../fonts/sfuitext-bold-webfont.woff2') format('woff2'),
+         url('../fonts/sfuitext-bold-webfont.ttf') format('ttf'),
+         url('../fonts/sfuitext-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_textregular';
+    src: url('../fonts/sfuitext-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sfuitext-regular.ttf') format('ttf'),
+         url('../fonts/sfuitext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
