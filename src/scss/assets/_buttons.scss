@@ -1,0 +1,8 @@
+.btn{
+    &--follow{
+        background: transparent;
+        border: 1px solid $activeColor;
+        color: $activeColor;
+        text-transform: uppercase;
+    }
+}

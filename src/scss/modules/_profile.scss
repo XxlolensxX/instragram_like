@@ -1,0 +1,137 @@
+.profile{
+    &__header{
+        display: flex;
+        height: 64px;
+        align-items: flex-end;
+        padding-bottom: 5px;
+
+    }
+    &__name{
+        width: 90%;
+        &__h2{
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+    &__options{
+        width: 10%;
+        text-align: right;
+    }
+
+    &-information{
+        padding: 16px 0;
+        background: #ffffff;
+        border-bottom: 1px solid #DBDBDB;
+        &__numbers{
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            &__figure{
+                margin: 0;
+            }
+            &__people{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+
+                &-container{
+                    display: flex;
+                }
+
+                .btn{
+                    background: #EFEFEF;
+                }
+
+                p{
+                    margin: 0;
+                    line-height: 14px;
+                }
+            }
+        }
+
+        &__ubication{
+            margin-top: 16px;
+            p{
+                margin: 0;
+            }
+        }
+
+        &--private{
+            .profile-information__buttons{
+                display: flex;
+                justify-content: space-around;
+                .btn{
+                    font-size: 12px;
+                    background: transparent;
+                }
+                .btn:first-child{
+                    width: 70%;
+                }
+                .btn:last-child{
+                    width: 25%;
+                    &:before{
+                        content: url('./../images/arrow-down.svg');
+                        color: inherit;
+                        width: 5px;
+                    }
+                }
+            }
+        }
+    }
+    &-activity{
+        background: $whiteColor;
+        &__buttons{
+            padding: 16px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &__button{
+            font-size: 20px;
+
+            &--active{
+                color: $activeColor;
+            }
+        }
+
+        &--multiply{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &__item{
+                margin: 0;
+                margin-bottom: 1px;
+
+                &--video{
+                    position: relative;
+                    &:before{
+                        content: url('./../images/video-shape.svg');
+                        position: absolute;
+                        width: 16px;
+                        height: 16px;
+                        z-index: 2;
+                        right: 16px;
+                        top: 12px;
+                    }
+                }
+            }
+        }
+
+        &--private{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 300px;
+            span{
+                font-size: 50px;
+                margin-bottom: 16px;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+}

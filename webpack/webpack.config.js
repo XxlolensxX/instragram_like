@@ -91,11 +91,23 @@ module.exports = (env) => {
       template: './src/html/search.html',
       minify: false
     }),
+    new HtmlWebpackPlugin({
+      //title: 'Basic Landing Page',
+      filename: '../profile.html',
+      template: './src/html/profile.html',
+      minify: false
+    }),
+    new HtmlWebpackPlugin({
+      //title: 'Basic Landing Page',
+      filename: '../private-account.html',
+      template: './src/html/private-account.html',
+      minify: false
+    }),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
       server: { baseDir: ['dist'] }
-    })
+    }),
   ]
 }
 }
